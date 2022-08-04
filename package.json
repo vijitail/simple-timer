@@ -5,14 +5,24 @@
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open --port=3000",
     "build": "parcel build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier-eslint --eslint-config-path='/Users/vijitail/Desktop/Projects/JavaScript/current-time-app/.eslintrc.json' --write '**/*.js'",
+    "lint": "eslint . --ext .js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.0",
     "parcel": "^2.6.2",
-    "husky": "^8.0.0"
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^6.0.1"
   }
 }

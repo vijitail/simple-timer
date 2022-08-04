@@ -1,10 +1,10 @@
-import { getTime } from "./utils";
+import { getTime } from './utils'
 
-const timeNode = document.getElementById("time");
+const timeNode = document.getElementById('time')
 
 const updateTime = () => {
-  const currentTime = getTime();
-  timeNode.innerHTML = currentTime;
-};
+  const currentTime = getTime()
+  timeNode.innerHTML = currentTime
+}
 
-setInterval(updateTime, 1000);
+setInterval(updateTime, 1000)
